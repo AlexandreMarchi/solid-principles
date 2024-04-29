@@ -1,6 +1,7 @@
 #include <iostream>
 
 // Violando o Princípio da Responsabilidade Única e o Princípio Aberto/Fechado
+// Violating the Single Responsability Principle and Open/Closed 
 class Employee {
 public:
     virtual float calculatePay() = 0;
@@ -30,6 +31,7 @@ public:
 };
 
 // Violando o Princípio da Substituição de Liskov e o Princípio da Segregação de Interfaces
+// Violating Liskov Substitution Principle and Interface Segregation Principle
 class Payroll {
 public:
     float calculateTotalPay(Employee* employees[], int numEmployees) {
