@@ -1,6 +1,8 @@
 #include <iostream>
 
-// Princípio da Responsabilidade Única (SRP) e Princípio Aberto/Fechado (OCP)
+// Princípio da Responsabilidade Única e Princípio Aberto/Fechado
+// Single Responsability Principle and Open Closed/Closed Principle
+
 class Employee {
 public:
     virtual ~Employee() = default;
@@ -30,7 +32,9 @@ public:
     }
 };
 
-// Princípio da Substituição de Liskov (LSP) e Princípio da Segregação de Interfaces (ISP)
+// Princípio da Substituição de Liskov e Princípio da Segregação de Interfaces
+// Liskov Substitution Principle and Interface Segregation Principle (ISP)
+
 class Payroll {
 public:
     float calculateTotalPay(const Employee* employees[], int numEmployees) const {
